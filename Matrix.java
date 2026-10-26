@@ -3,7 +3,6 @@ package Array2D;
 public class Matrix {
 	int rows;
 	int cols;
-
 	int[][] data;
 
 	Matrix(int rows, int cols) {
@@ -47,10 +46,9 @@ public class Matrix {
 		m1.displayDimention();
 		m2.displayDimention();
 
-		System.out.println("================================");
+		m2.set(1, 2, 45);
+		m2.set(3, 5, 89);
 
-		m2.set(3, 3, 6);
-
-		System.out.println(m2.getOverallMax());
+		System.out.println("Maximum Element " + m2.getOverallMax());
 	}
 }
